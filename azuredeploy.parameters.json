@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "logicAppName": {
+            "value": "csv-to-email"
+        },
+        "ftpserverAddress": {
+            "value": "myserver"
+        },
+        "ftpuserName": {
+            "value": "myFTP\\username"
+        },
+        "ftppassword": {
+            "value": "somepassword"
+        },
+        "ftpserverPort": {
+            "value": 21
+        },
+        "ftpisssl": {
+            "value": true
+        },
+        "ftpisBinaryTransport": {
+            "value": true
+        },
+        "ftpdisableCertificateValidation": {
+            "value": true
+        },
+        "repoUrl": {
+            "value": "https://github.com/jeffhollan/serverless-tutorial-functions.git"
+        },
+        "appName": {
+            "value": "uniqueFunctionName"
+        }
+    }
+}
